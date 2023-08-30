@@ -14,6 +14,39 @@ abstract class Car {
     private int quantityWeel;
     private double engineCapacity;
 
+    public Car (String manufacturer, String model, Color color,
+                TypeCar bodyType, TypeGearbox gearboxType, TypeFuel fuelType,
+                int quantityWeel, double engineCapacity) {
+        this.manufacturer = manufacturer;
+        this.model = model;
+        this.color = color;
+        this.bodyType = bodyType;
+        this.gearboxType = gearboxType;
+        this.fuelType = fuelType;
+        this.quantityWeel = quantityWeel;
+        this.engineCapacity = engineCapacity;
+    }
+
+    public void movement() {
+
+    }
+
+    public void maintenance() {
+
+    }
+
+    public abstract int gearShifting(int gear);
+    
+    public boolean switchHeadLights() {
+
+        return true;
+    }
+
+    public boolean switchWipers() {
+
+        return true;
+    }
+
     public String getManufacturer() {
         return manufacturer;
     }
